@@ -24,7 +24,7 @@ const CommunitySection = () => {
     <section className="pt-[40px] md:px-[9rem] px-[4rem]">
         <Header title="Manage your entire community in a single system" para="Who is Nextcent suitable for?" />
 
-        <div className="grid grid-cols-3 gap-4 justify-items-center">
+        <div className="grid md:grid-cols-3 grid-cols-1  gap-4 justify-items-center">
             {
                 communityItems.map((item, id) => (
                     <CommunityCard key={id} {...item}  />

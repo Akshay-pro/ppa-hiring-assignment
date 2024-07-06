@@ -1,5 +1,4 @@
 "use client";
-
 import { X } from "lucide-react";
 import MainButton from "./MainButton";
 import Link from "next/link";
@@ -43,7 +42,7 @@ function NavBar() {
             <div className="hidden lg:block animate-in fade-in zoom-in bg-[#F5F7FA] py-4">
                 <div className="flex justify-between md:mx-[9rem] items-center">
                     <div>
-                        <img src="/images/logo.svg" alt="logo" />
+                        <img src="/images/header-logo.svg" alt="logo" />
                     </div>
                     
                     <div className="flex gap-[20px] xl:gap-[50px] text-[16px] items-center select-none">
@@ -76,7 +75,7 @@ function NavBar() {
                 <div className="flex justify-between px-4 ">
                     <div className="flex gap-[50px] text-[16px] items-center select-none">
                         <img
-                            src="/images/logo.svg"
+                            src="/images/header-logo.svg"
                             alt="logo"
                             className="w-[7rem]"
                         />

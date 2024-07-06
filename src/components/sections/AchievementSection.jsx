@@ -38,7 +38,7 @@ const AchievementSection = () => {
             }}
         >
             <section className="bg-[#F5F7FA] py-[64px] md:px-[9rem] px-[4rem] mt-10">
-                <div className="flex flex-col-reverse gap-6 md:flex-row items-center">
+                <div className="flex flex-col gap-6 md:flex-row items-center">
                     <div>
                         <h1 className="text-4xl font-[600] text-[#4D4D4D]">
                             Helping a local
@@ -46,12 +46,12 @@ const AchievementSection = () => {
                                 business reinvent itself
                             </span>
                         </h1>
-                        <p className="text-base text-[#18191F] font-[400]">
+                        <p className="text-base text-[#18191F] font-[400] py-2">
                             We reached here with our hard work and dedication
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-2 gap-12 m-auto">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 m-auto">
                         {achievementItems.map((item, id) => (
                             <div className="w-[255px] flex gap-4 items-center">
                                 <div className="w-12 h-12">

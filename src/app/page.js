@@ -1,10 +1,17 @@
 import NavBar from "@/components/common/Navbar";
+import ClientSection from "@/components/sections/ClientSection";
+import CommunitySection from "@/components/sections/CommunitySection";
+import HeroSection from "@/components/sections/HeroSection";
 
 export default function Home() {
   return (
     <main>
       <NavBar />
-      
+      <div>
+          <HeroSection />
+          <ClientSection />
+          <CommunitySection />
+      </div>
     </main>
   );
 }

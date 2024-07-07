@@ -24,7 +24,7 @@ const CommunitySection = () => {
     <section className="pt-[40px] md:px-[9rem] px-[3rem]">
         <Header title="Manage your entire community in a single system" para="Who is Nextcent suitable for?" />
 
-        <div className="flex flex-wrap gap-6 lg:justify-evenly">
+        <div className="flex flex-wrap gap-6 lg:justify-evenly md:py-4">
             {
                 communityItems.map((item, id) => (
                     <CommunityCard key={id} {...item}  />

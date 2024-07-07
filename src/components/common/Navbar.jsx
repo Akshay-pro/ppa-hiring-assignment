@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { ModeToggle } from "./DarkModeToggle";
 import { Button } from "../ui/button";
+import Image from "next/image";
 
 function NavBar() {
     const [menu, setMenu] = useState(false);
@@ -43,7 +44,7 @@ function NavBar() {
             <div className="hidden lg:block animate-in fade-in zoom-in bg-[#F5F7FA] dark:bg-[#222222] py-4">
                 <div className="flex justify-between lg:mx-[9rem] items-center gap-4">
                     <div>
-                        <img src="/images/header-logo.svg" alt="logo" className="dark:bg-white p-2 rounded-sm" />
+                        <Image width={154} height={24} src="/images/header-logo.svg" alt="logo" className="dark:bg-white p-2 rounded-sm" />
                     </div>
                     
                     <div className="flex gap-[20px] xl:gap-[50px] text-[16px] items-center select-none">
@@ -74,7 +75,9 @@ function NavBar() {
             >
                 <div className="flex justify-between px-4 ">
                     <div className="flex gap-[50px] text-[16px] items-center select-none">
-                        <img
+                        <Image
+                            width={112}
+                            height={30}
                             src="/images/header-logo.svg"
                             alt="logo"
                             className="w-[7rem] dark:bg-white p-2 rounded-sm"

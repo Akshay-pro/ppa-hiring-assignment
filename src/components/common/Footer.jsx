@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
@@ -5,7 +6,9 @@ const Footer = () => {
         <footer className="py-16 md:px-[165px] bg-[#263238] px-[2rem]">
             <div className="flex flex-col lg:flex-row gap-8 justify-between">
                 <div className="flex flex-col lg:gap-10 gap-5 lg:mb-0 max-w-[350px]">
-                    <img
+                    <Image
+                        width={350}
+                        height={24}
                         src="/images/footer-logo.svg"
                         alt="footer logo"
                         className="w-48 h-7"
@@ -117,7 +120,9 @@ const Footer = () => {
                                 placeholder="Your email address"
                                 className="py-3 px-4 text-[#D9DBE1] rounded-lg bg-[#515b60] placeholder:text-[#D9DBE1] text-sm out"
                             />
-                            <img
+                            <Image
+                                width={18}
+                                height={18}
                                 src="/images/send.svg"
                                 alt="send logo"
                                 className="w-[18px] h-[18px] absolute top-1/2 right-3 transform -translate-y-1/2"

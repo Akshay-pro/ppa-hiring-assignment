@@ -1,5 +1,6 @@
 import React from "react";
 import { ArrowRight } from 'lucide-react';
+import Image from "next/image";
 
 const CustomerSection = () => {
     const clientItem = [
@@ -14,7 +15,9 @@ const CustomerSection = () => {
         <section className="bg-[#F5F7FA] dark:bg-black py-[64px] md:px-[9rem] px-[3rem] mt-10">
             <div className="flex flex-col lg:flex-row md:gap-20 gap-10">
                 <div className="max-w-[326px] h-[326px] m-auto">
-                    <img
+                    <Image
+                        width={326}
+                        height={326}
                         src="/images/customer-img.svg"
                         className="w-full h-full object-cover rounded-sm"
                         alt="customer image"

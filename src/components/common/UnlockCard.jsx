@@ -1,17 +1,20 @@
 import React from "react";
 import { Button } from "../ui/button";
+import Image from 'next/image'
 
 const UnlockCard = ({imgSrc, title, para}) => {
 
     return (
         <div className="flex items-center flex-col md:flex-row gap-4">
-            <div className="max-w-[442px] m-auto">
-                <img
+            
+                <Image
+                    width={442}
+                    height={433}
                     src={imgSrc}
-                    className="w-full h-full"
+                    className="lg:w-[442px] lg:h-[433px] w-[300px] h-[300px]"
                 />
-            </div>
-            <div className="flex flex-col gap-6 w-fit">
+     
+            <div className="flex flex-col gap-6 max-w-[600px]">
                 <h1 className="font-[600] md:text-4xl text-3xl text-[#4D4D4D] dark:text-white">
                    {title}
                 </h1>

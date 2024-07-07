@@ -1,10 +1,13 @@
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 import React from "react";
 
 const UpdateCard = ({ title, imgSrc }) => {
     return (
         <div className="max-w-[368px] h-[286px] relative m-auto mb-28">
-            <img
+            <Image
+                width={368}
+                height={286}
                 src={imgSrc}
                 alt="update image"
                 className="w-full h-full object-cover rounded-md"

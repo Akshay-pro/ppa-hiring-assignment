@@ -6,6 +6,7 @@
     CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Button } from "../ui/button";
+import Image from "next/image";
 
 function HeroSection() {
     const carouselItem = [
@@ -51,7 +52,9 @@ function HeroSection() {
                                 </div>
                             </div>
                             <div>
-                                <img
+                                <Image
+                                width={391}
+                                height={407}
                                     src={item.imgSrc}
                                     alt="guy with phone surrounded by action icons"
                                 />

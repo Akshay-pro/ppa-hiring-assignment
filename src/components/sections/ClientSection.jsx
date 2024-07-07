@@ -1,5 +1,5 @@
 import Header from "../common/Header"
-
+import Image from 'next/image'
 const ClientSection = () => {
 
     const clientItem = [
@@ -18,7 +18,7 @@ const ClientSection = () => {
         <div className="grid md:grid-cols-7 grid-cols-4 gap-4 py-8 justify-items-center dark:text-white">
             {   
                 clientItem.map((item, id) => (
-                    <img className="block w-[48px] h-[48px] dark:bg-white dark:rounded-full" key={id} src={item.imgSrc} alt="client logo" />
+                    <Image key={id} src={item.imgSrc} width={48} height={48} className="block dark:bg-white dark:rounded-full"  alt="client logo" />
                 ))
             }
         </div>

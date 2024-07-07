@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React, { useState } from "react";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
@@ -51,11 +52,13 @@ const AchievementSection = () => {
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 m-auto">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 m-auto ">
                         {achievementItems.map((item, id) => (
-                            <div key={id} className="max-w-[255px] flex gap-4 items-center">
+                            <div key={id} className="w-[255px] flex gap-4 items-center">
                                 <div className="sm:w-12 sm:h-12 w-8 h-8">
-                                    <img
+                                    <Image
+                                        width={12}
+                                        height={12}
                                         src={item.imgSrc}
                                         alt="achievement logo"
                                         className="w-full h-full object-cover"

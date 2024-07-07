@@ -1,3 +1,4 @@
+import Footer from "@/components/common/Footer";
 import NavBar from "@/components/common/Navbar";
 import AchievementSection from "@/components/sections/AchievementSection";
 import CalendarSection from "@/components/sections/CalendarSection";
@@ -24,6 +25,7 @@ export default function Home() {
                 <UpdatesSection />
                 <DemoSection />
             </div>
+            <Footer />
         </main>
     );
 }

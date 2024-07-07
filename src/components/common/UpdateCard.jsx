@@ -10,7 +10,7 @@ const UpdateCard = ({ title, imgSrc }) => {
                 className="w-full h-full object-cover rounded-md"
             />
 
-            <div className="md:w-[317px] w-[240px] mt-[-30px] absolute top-3/4 left-1/2 transform -translate-x-1/2 text-center py-6 px-4 bg-[#F5F7FA] shadow-lg rounded-sm z-10">
+            <div className="md:w-[317px] w-[240px] mt-[-20px] absolute top-3/4 left-1/2 transform -translate-x-1/2 text-center py-6 px-4 bg-[#F5F7FA] shadow-lg rounded-sm z-10">
                 <h4 className="text-xl font-[600] text-[#717171] mb-4">
                     {title}
                 </h4>

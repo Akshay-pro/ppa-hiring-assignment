@@ -1,5 +1,4 @@
-import MainButton from "../common/MainButton";
-import {
+    import {
     Carousel,
     CarouselContent,
     CarouselItem,

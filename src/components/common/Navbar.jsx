@@ -1,6 +1,5 @@
 "use client";
 import { X } from "lucide-react";
-import MainButton from "./MainButton";
 import Link from "next/link";
 import { useState } from "react";
 import { ModeToggle } from "./DarkModeToggle";
@@ -51,9 +50,7 @@ function NavBar() {
 
                         {
                             menuItem.map((item, id) => (
-                                <>
-                                    <Link href={item.link} key={id} className={`hover:text-primary cursor-pointer flex items-center gap-2 font-[500] text-gray`}>{item.name}</Link>
-                                </>
+                                <Link key={id} href={item.link} className={`hover:text-primary cursor-pointer flex items-center gap-2 font-[500] text-gray`}>{item.name}</Link>
                             ))
                         }
                         
@@ -105,9 +102,7 @@ function NavBar() {
                         <div className="flex flex-col gap-8 mt-8 px-4">
                             {
                                 menuItem.map((item, id) => (
-                                    <>
-                                        <Link href={item.link} key={id} className={`hover:text-primary cursor-pointer flex items-center gap-2  font-[500] text-gray`}>{item.name}</Link>
-                                    </>
+                                    <Link  key={id} href={item.link} className={`hover:text-primary cursor-pointer flex items-center gap-2  font-[500] text-gray`}>{item.name}</Link>
                                 ))
                             }
                             
@@ -115,10 +110,7 @@ function NavBar() {
                                 <Link href="/" className={`hover:text-primary cursor-pointer flex items-center gap-2  font-[500] text-gray dark:text-white`}>
                                     Login
                                 </Link>
-                                <MainButton
-                                    text="Sign up"
-                                    classes="shadow-none"
-                                />
+                                <Button className="w-[90px] h-[40px] text-sm font-[500] bg-[#4CAF4F] text-white">Sign Up</Button>
                             </div>
                         </div>
                     </div>

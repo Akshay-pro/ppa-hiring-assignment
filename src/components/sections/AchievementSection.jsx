@@ -53,7 +53,7 @@ const AchievementSection = () => {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 m-auto">
                         {achievementItems.map((item, id) => (
-                            <div className="max-w-[255px] flex gap-4 items-center">
+                            <div key={id} className="max-w-[255px] flex gap-4 items-center">
                                 <div className="sm:w-12 sm:h-12 w-8 h-8">
                                     <img
                                         src={item.imgSrc}

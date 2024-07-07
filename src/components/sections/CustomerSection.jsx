@@ -11,17 +11,17 @@ const CustomerSection = () => {
         { imgSrc:"/images/client/c6.svg" },
     ]
     return (
-        <section className="bg-[#F5F7FA] py-[64px] md:px-[9rem] px-[4rem] mt-10">
-            <div className="flex flex-col md:flex-row gap-10">
-                <div className="min-w-[326px] min-h-[326px]">
+        <section className="bg-[#F5F7FA] dark:bg-black py-[64px] md:px-[9rem] px-[3rem] mt-10">
+            <div className="flex flex-col lg:flex-row md:gap-20 gap-10">
+                <div className="max-w-[326px] h-[326px] m-auto">
                     <img
                         src="/images/customer-img.svg"
                         className="w-full h-full object-cover rounded-sm"
                         alt="customer image"
                     />
                 </div>
-                <div>
-                    <p className="text-base text-[#717171] font-[500] text-justify">
+                <div className="w-fit">
+                    <p className="text-base text-[#717171] dark:text-white font-[500]">
                         Maecenas dignissim justo eget nulla rutrum molestie.
                         Maecenas lobortis sem dui, vel rutrum risus tincidunt
                         ullamcorper. Proin eu enim metus. Vivamus sed libero
@@ -41,7 +41,7 @@ const CustomerSection = () => {
                         <h4 className="text-xl text-[#4CAF4F] font-[600]">
                             Tim Smith
                         </h4>
-                        <p className="text-base text-[#89939E] font-[400] my-2">
+                        <p className="text-base text-[#89939E] dark:text-[#dbdbdb] font-[400] my-2">
                             British Dragon Boat Racing Association
                         </p>
                     </div>

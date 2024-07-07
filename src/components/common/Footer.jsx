@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Footer = () => {
     return (
-        <footer className="py-16 md:px-[165px] bg-[#263238] px-[40px]">
+        <footer className="py-16 md:px-[165px] bg-[#263238] px-[2rem]">
             <div className="flex flex-col lg:flex-row gap-8 justify-between">
                 <div className="flex flex-col lg:gap-10 gap-5 lg:mb-0 max-w-[350px]">
                     <img
@@ -97,7 +97,7 @@ const Footer = () => {
                             href="/"
                             className="text-sm font-[400] text-[#F5F7FA]"
                         >
-                            Privacvy Policy
+                            Privacy Policy
                         </Link>
                         <Link
                             href="/"
@@ -111,7 +111,7 @@ const Footer = () => {
                         <h2 className="text-xl font-[600] text-[#ffffff] mb-2">
                             Stay Up To Date
                         </h2>
-                        <div className="relative w-[255px] bg-[#515b60] rounded-lg">
+                        <div className="relative max-w-[255px] bg-[#515b60] rounded-lg">
                             <input
                                 type="text"
                                 placeholder="Your email address"

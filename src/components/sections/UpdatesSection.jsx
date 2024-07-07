@@ -18,13 +18,13 @@ export const UpdatesSection = () => {
         },
     ];
     return (
-        <section className="py-[64px] md:px-[9rem] px-[2rem]">
+        <section className="md:py-[64px] py-[40px] md:px-[9rem] px-[3rem]">
             <Header
                 title="Caring is the new marketing"
                 para="The Nexcent blog is the best place to read about the latest membership insights, trends and more. See who's joining the community, read about how our community are increasing their membership income and lot's more.​"
             />
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 py-4">
+            <div className="flex flex-wrap gap-4 mt-4">
                 {updateItems.map((item, id) => (
                     <UpdateCard key={id} {...item} />
                 ))}

@@ -3,6 +3,8 @@ import { X } from "lucide-react";
 import MainButton from "./MainButton";
 import Link from "next/link";
 import { useState } from "react";
+import { ModeToggle } from "./DarkModeToggle";
+import { Button } from "../ui/button";
 
 function NavBar() {
     const [menu, setMenu] = useState(false);
@@ -39,10 +41,10 @@ function NavBar() {
     return (
         <div className="md:sticky md:top-0 md:shadow-none z-20 ">
             {/* DESKTOP */}
-            <div className="hidden lg:block animate-in fade-in zoom-in bg-[#F5F7FA] py-4">
-                <div className="flex justify-between md:mx-[9rem] items-center">
+            <div className="hidden lg:block animate-in fade-in zoom-in bg-[#F5F7FA] dark:bg-[#222222] py-4">
+                <div className="flex justify-between lg:mx-[9rem] items-center gap-4">
                     <div>
-                        <img src="/images/header-logo.svg" alt="logo" />
+                        <img src="/images/header-logo.svg" alt="logo" className="dark:bg-white p-2 rounded-sm" />
                     </div>
                     
                     <div className="flex gap-[20px] xl:gap-[50px] text-[16px] items-center select-none">
@@ -50,7 +52,7 @@ function NavBar() {
                         {
                             menuItem.map((item, id) => (
                                 <>
-                                    <Link href={item.link} key={id} className={`hover:text-primary cursor-pointer flex items-center gap-2  font-[500] text-gray`}>{item.name}</Link>
+                                    <Link href={item.link} key={id} className={`hover:text-primary cursor-pointer flex items-center gap-2 font-[500] text-gray`}>{item.name}</Link>
                                 </>
                             ))
                         }
@@ -58,17 +60,18 @@ function NavBar() {
                     </div>
                     <div className="flex items-center gap-[40px] select-none">
                         <Link href="/"
-                            className={`hover:text-primary cursor-pointer flex items-center gap-2  font-[500] text-gray`}
+                            className={`hover:text-primary cursor-pointer flex items-center gap-2 font-[500] text-[#4CAF4F]`}
                         >
                             Login
                         </Link>
-                        <MainButton text="Sign up" classes="shadow-none" />
+                        <Button className="w-[90px] h-[40px] text-sm font-[500] bg-[#4CAF4F] text-white">Sign Up</Button>
+                        <ModeToggle />
                     </div>
                 </div>
             </div>
             {/* MOBILE */}
             <div
-                className={` block lg:hidden shadow-sm  fixed top-0 w-full z-[999] !bg-[#F5F7FA] py-4 animate-in fade-in zoom-in  ${
+                className={` block lg:hidden shadow-sm  fixed top-0 w-full z-[40] !bg-[#F5F7FA] dark:!bg-[#222222] py-4 animate-in fade-in zoom-in  ${
                     menu ? " bg-primary py-2" : ""
                 } `}
             >
@@ -77,13 +80,14 @@ function NavBar() {
                         <img
                             src="/images/header-logo.svg"
                             alt="logo"
-                            className="w-[7rem]"
+                            className="w-[7rem] dark:bg-white p-2 rounded-sm"
                         />
                     </div>
                     <div className="flex items-center gap-[40px] ">
+                        <ModeToggle />
                         {menu ? (
                             <X
-                                className="cursor-pointer animate-in fade-in zoom-in text-black"
+                                className="cursor-pointer animate-in fade-in zoom-in text-black dark:text-white"
                                 onClick={toggleMenu}
                             />
                         ) : (
@@ -106,8 +110,9 @@ function NavBar() {
                                     </>
                                 ))
                             }
+                            
                             <div className="flex flex-col gap-[40px] select-none">
-                                <Link href="/" className={`hover:text-primary cursor-pointer flex items-center gap-2  font-[500] text-gray`}>
+                                <Link href="/" className={`hover:text-primary cursor-pointer flex items-center gap-2  font-[500] text-gray dark:text-white`}>
                                     Login
                                 </Link>
                                 <MainButton

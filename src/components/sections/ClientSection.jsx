@@ -12,13 +12,13 @@ const ClientSection = () => {
         { imgSrc:"/images/client/c7.svg" },
     ]
   return (
-    <section className="pt-[40px] md:px-[9rem] px-[4rem]">
+    <section className="pt-[40px] md:px-[9rem] px-[3rem]">
         <Header title="Clients" para="We have been working with some Fortune 500+ clients" />
 
-        <div className="grid md:grid-cols-7 grid-cols-4 gap-4 py-8 justify-items-center">
+        <div className="grid md:grid-cols-7 grid-cols-4 gap-4 py-8 justify-items-center dark:text-white">
             {   
                 clientItem.map((item, id) => (
-                    <img className="block w-[48px] h-[48px]" key={id} src={item.imgSrc} alt="client logo" />
+                    <img className="block w-[48px] h-[48px] dark:bg-white dark:rounded-full" key={id} src={item.imgSrc} alt="client logo" />
                 ))
             }
         </div>

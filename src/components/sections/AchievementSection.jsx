@@ -37,24 +37,24 @@ const AchievementSection = () => {
                 setCounterOn(false);
             }}
         >
-            <section className="bg-[#F5F7FA] py-[64px] md:px-[9rem] px-[4rem] mt-10">
-                <div className="flex flex-col gap-6 md:flex-row items-center">
-                    <div>
-                        <h1 className="text-4xl font-[600] text-[#4D4D4D]">
+            <section className="bg-[#F5F7FA] dark:bg-[#222222] md:py-[64px] py-[40px] md:px-[9rem] px-[3rem] mt-10">
+                <div className="flex flex-col gap-6 lg:flex-row items-center">
+                    <div className="text-center sm:text-left">
+                        <h1 className="md:text-4xl text-3xl font-[600] text-[#4D4D4D] dark:text-white">
                             Helping a local
                             <span className="block text-[#4CAF4F]">
                                 business reinvent itself
                             </span>
                         </h1>
-                        <p className="text-base text-[#18191F] font-[400] py-2">
+                        <p className="text-base text-[#18191F] dark:text-[#dbdbdb] font-[400] py-2">
                             We reached here with our hard work and dedication
                         </p>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 m-auto">
                         {achievementItems.map((item, id) => (
-                            <div className="w-[255px] flex gap-4 items-center">
-                                <div className="w-12 h-12">
+                            <div className="max-w-[255px] flex gap-4 items-center">
+                                <div className="sm:w-12 sm:h-12 w-8 h-8">
                                     <img
                                         src={item.imgSrc}
                                         alt="achievement logo"
@@ -62,7 +62,7 @@ const AchievementSection = () => {
                                     />
                                 </div>
                                 <div className="">
-                                    <h1 className="font-[700] text-[28px] leading-[36px] text-[#4D4D4D]">
+                                    <h1 className="font-[700] sm:text-[28px] text-xl leading-[36px] text-[#4D4D4D] dark:text-white">
                                         {counterOn && (
                                             <CountUp
                                                 start={0}
@@ -72,7 +72,7 @@ const AchievementSection = () => {
                                             />
                                         )}
                                     </h1>
-                                    <p className="text-base font-[400] text-[#717171]">
+                                    <p className="sm:text-base text-sm font-[400] text-[#717171] dark:text-[#dbdbdb]">
                                         {item.title}
                                     </p>
                                 </div>

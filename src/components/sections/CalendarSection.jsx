@@ -9,7 +9,7 @@ const CalendarSection = () => {
     }
 
     return (
-        <section className="pt-[40px] md:px-[9rem] px-[4rem]">
+        <section className="pt-[40px] md:px-[9rem] px-[3rem]">
             <UnlockCard {...info} />
         </section>
     );
